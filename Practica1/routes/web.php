@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/index_directo', function () {
+    return view('index');
+});
+
+Route::get('/index', 'NoVaController@index');
+Route::get('/patata', 'NoVaController@potato');
+Route::get('/lechuga', 'NoVaController@lechuga');
